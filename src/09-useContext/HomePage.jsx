@@ -6,9 +6,9 @@ export const HomePage = () => {
   const { user } = useContext(UserContext)
   return (
     <>
-    <h1>Home  {user?.name} </h1>
+    <h1>HomePage {user?.name} </h1>
     <hr />
-    <pre>
+    <pre aria-label="pre" >
       { JSON.stringify(user, null ,3)}
     </pre>
     </>
